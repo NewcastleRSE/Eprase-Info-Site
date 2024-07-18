@@ -34,6 +34,13 @@ function openCity(evt, cityName) {
 
 // Accordions
 function myAccFunc(id) {
+  //first hide all accordion elements, then open the one we want
+  var c = document.getElementsByClassName('accordion-text');
+  var n = c.length;
+  for(let i=0; i<n; i++) {
+	c[i].classList.remove('w3-show');
+  	c[i].classList.add('w3-hide');
+  }
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
