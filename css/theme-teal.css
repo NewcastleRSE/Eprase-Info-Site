@@ -25,7 +25,7 @@
 .w3-text-theme {color:#0D6D62 !important}
 .w3-border-theme {border-color:#0D6D62 !important}
 /*.w3-accordion-theme {color: #FFF !important; background-color:#2D4E8B !important}*/
-.w3-accordion-theme {color: #FFF !important; background-color:#208278 !important}
+.w3-accordion-theme {color: #FFF !important; background-color:#389188 !important; border-bottom: 1px solid #1c3a37}
 /*.w3-navbar-theme {color: #FFF !important; background-color: #002824 !important; margin-bottom: 10px;}*/
 .w3-navbar-theme {color: #FFF !important; background-color: #183874 !important; margin-bottom: 10px;}
 .w3-hover-theme:hover {color:#fff !important; background-color:#0D6D62 !important}
