@@ -32,3 +32,13 @@
 .w3-hover-theme:hover {color:#fff !important; background-color:#576E75 !important}
 .w3-hover-text-theme:hover {color:#576E75 !important}
 .w3-hover-border-theme:hover {border-color:#576E75 !important}
+
+.highlight {
+    width: 80%;
+    margin: auto;
+    padding: 0 20px;
+    border: 1px solid #3D4D52;
+    background-color: #E1D5BB;
+    border-radius: 20px;
+    text-align: center;
+}
