@@ -38,7 +38,7 @@
     margin: auto;
     padding: 0 20px;
     border: 1px solid #3D4D52;
-    background-color: #E1D5BB;
+    background-color: /*#E1D5BB*/ #d6e6e3;
     border-radius: 20px;
     text-align: center;
 }
