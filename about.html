@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/theme-teal	.css">
+<link rel="stylesheet" href="css/theme-colors.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <script src='js/eprase.js'></script>
 </head>
@@ -17,12 +17,12 @@
   <button class="w3-sidebar-close w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
   <a href="/" class="w3-sidebar-item w3-button">Home</a>
   <a href="about.html" class="w3-sidebar-item w3-button">About</a>
-  <a href="using.html" class="w3-sidebar-item w3-button">Using the Tool</a>
-  <a href="reports.html" class="w3-sidebar-item w3-button">Reports</a>
+  <a href="using.html" class="w3-sidebar-item w3-button">User Guide</a>
+  <a href="faq.html" class="w3-sidebar-item w3-button">FAQ</a>
 </nav>
 
 <!-- Header -->
-<header class="w3-container w3-theme w3-padding" id="myHeader">
+<header class="w3-container w3-header w3-padding" id="myHeader">
   <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
   <div class="w3-center">
   <h4>Electronic Prescribing Risk and Safety Evaluation</h4>
@@ -32,51 +32,53 @@
 <div class="w3-bar w3-navbar-theme">
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('/')">Home</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16 navbar-item-active" onclick="getContent('about.html')">About</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('using.html')">Using the Tool</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('reports.html')">Reports</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('using.html')">User Guide</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('faq.html')">FAQ</button>
 </div>
 <div id="content">
 <button onclick="myAccFunc('about_summary')" class="w3-padding-16 w3-accordion-theme w3-button w3-block w3-left-align accordion-header">Summary</button>
 <div id='about_summary' class='accordion-text'>
-<p>ePRaSE is a web-based tool intended to help NHS hospital sites assess and evaluate their e-prescribing systems to support optimisation and reduce harm caused by adverse drug events, ultimately improving medication safety.</p>
-
-<p>The tool provides a set of fictional patients, which users set up in their live or test prescribing environments, and then provides a set of randomised prescribing scenarios to challenge their system responses to risk. The performance of the prescribing system to the risk scenarios is evaluated in real time with a text-based report and accompanying visuals. Use of the tool is intended to guide and assist e-prescribing system users and new implementers in the optimisation of their systems.</p>
-
+  <p>ePRaSE is a web-based tool intended to help NHS hospital sites assess and evaluate their ePrescribing systems to support optimisation and reduce harm caused by adverse medication prescribing events, ultimately improving patient safety.</p>
+  <p>The tool provides a set of 15 fictional 'patients', which users set up in their live or test prescribing environments, and then provides a set of 45 prescribing test scenarios to challenge their system responses to risk. The performance of the prescribing system to the risk scenarios is provided in real time with a text-based report and accompanying visuals.
+  The report is intended to guide and assist e-prescribing system users and new implementers in the optimisation of their systems.</p>
+  
+  <p>The latest version, ePRaSE 2024, is suitable for all sites actively using electronic prescribing systems for adult patients, and is accessible to registered users with nhs.uk or nhs.net email accounts (up to four users per Trust). The report applies to the Trust as a whole.</p>
+  
+  <p>The web based ePRaSE application is compatible with all modern browsers: Google Chrome, Mozilla Firefox, Opera, Safari, and Edge.</p>
+  
 </div>
 
 <button onclick="myAccFunc('about_background')" class="w3-padding-16 w3-accordion-theme w3-button w3-block w3-left-align accordion-header">Background</button>
 <div id='about_background' class='accordion-text w3-hide'>
-<p>E-prescribing (EP) is the utilisation of electronic systems to facilitate and enhance the safety and efficacy of prescribing medicines to patients, and to provide a robust audit trail for the entire medicines use process. Implementation of EP with clinical decision support (CDS) has been extensively researched; many studies have shown reductions in medication error rates and preventable adverse effects. Following implementation of EP with CDS, medication errors tend to decrease over time as system configuration is optimised for local use and users adapt to the system. Greater patient safety benefits are documented with experienced users rather than new implementers. However, upgrades and system modifications can also introduce new safety risks, such as incompatibilities with legacy software. Detecting and managing safety risks can be difficult due to the complex nature of potential errors relating to not only the system itself, but also the behaviours of users and characteristics specific to organisations.</p>
+<p>ePrescribing (EP) is the utilisation of electronic systems to facilitate and 
+  enhance the safety and efficacy of prescribing medicines to patients, and to 
+  provide a robust audit trail for the entire medicines use process. Implementation 
+  of EP with clinical decision support (CDS) has been extensively researched; 
+  many studies have shown reductions in medication error rates and preventable 
+  adverse effects. Following implementation of EP with CDS, medication errors 
+  tend to decrease over time as system configuration is optimised for local use 
+  and users adapt to the system. Greater patient safety benefits are documented 
+  with experienced users rather than new implementers. However, upgrades and 
+  system modifications can also introduce new safety risks, such as incompatibilities 
+  with legacy software. Detecting and managing safety risks can be difficult 
+  due to the complex nature of potential errors relating to not only the system 
+  itself, but also the behaviours of users and characteristics specific to 
+  organisations.</p>
 
-<p>In the UK, there is currently no standard method of evaluating the effectiveness of EP systems in preventing medication errors or potential adverse drug events. NHS England, the UK Government organisation that oversees commissioning of NHS services in England, has commissioned the development of an e-Prescribing Risk and Safety Evaluation tool (ePRaSE) to evaluate the capabilities of the EP systems currently implemented in UK hospitals. The ePRaSE assessment utilises test patient data alongside previously validated prescribing scenarios and offers a one-time, cross-sectional look at whether system decision support provides appropriate advice to a prescriber.</p>
+<p>In the UK, there is currently no standard method of evaluating the effectiveness 
+  of EP systems in preventing medication errors or potential adverse drug events. 
+  NHS England, the UK Government organisation that oversees commissioning of NHS 
+  services in England, has commissioned the development of an Electronic Prescribing Risk 
+  and Safety Evaluation tool (ePRaSE) to evaluate the capabilities of the EP 
+  systems currently implemented in UK hospitals. The ePRaSE assessment utilises 
+  test patient data alongside previously validated prescribing scenarios and 
+  offers a one-time, cross-sectional look at whether system decision support 
+  provides appropriate advice to a prescriber.</p>
 
 </div>
-
-<button onclick="myAccFunc('about_design')" class="w3-padding-16 w3-accordion-theme w3-button w3-block w3-left-align accordion-header">Design</button>
-<div id='about_design' class='accordion-text w3-hide'>
-<p>ePRaSE is a web-based assessment composed of five parts. The user:</p>
-<ol class="w3-ol w3-margin-bottom">
-	<li>provides information about EP usage within the organisation;</li>
-	<li>enters demographic information for 15 test patients into either the live hospital patient administration system or a pre-production domain that mimics the live system;</li>
-	<li>enters clinical data (e.g., diagnosed medical conditions, allergy status) for each of these test patients into the relevant part of the electronic patient record; 
-	<li>completes 45 prescribing tasks, including a range of high-risk prescribing scenarios, where the clinical decision support response (or lack of) is recorded; and</li>
-	<li>answers 3-5 questions on system configuration, e.g., whether the system allows insulin to be prescribed in millilitres.</li>
-</ol>
-<p>On completion, the user is presented with the results of the ePRaSE assessment.</p>
 </div>
-</div>
-<footer class="w3-container w3-center w3-theme w3-padding-16">
-	<div class='w3-third w3-left'><img src='img/ncl_logo.png' alt='Newcastle University'></div>
-	<div class='w3-third'>
-  		<p>Footer Stuff</p>
-  	</div>
-  	<div class='w3-third w3-right'><img src='img/nhs_logo.png' alt='NHS England'></div>
-  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
-    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
+<div w3-include-html="footer.html"></div>
 
 </body>
 </html>
+<script>includeHTML();</script>

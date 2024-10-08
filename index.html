@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/theme-teal	.css">
+<link rel="stylesheet" href="css/theme-colors.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <script src='js/eprase.js'></script>
 </head>
@@ -17,12 +17,12 @@
   <button class="w3-sidebar-close w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
   <a href="/" class="w3-sidebar-item w3-button">Home</a>
   <a href="about.html" class="w3-sidebar-item w3-button">About</a>
-  <a href="using.html" class="w3-sidebar-item w3-button">Using the Tool</a>
-  <a href="reports.html" class="w3-sidebar-item w3-button">Reports</a>
+  <a href="using.html" class="w3-sidebar-item w3-button">User Guide</a>
+  <a href="faq.html" class="w3-sidebar-item w3-button">FAQ</a>
 </nav>
 
 <!-- Header -->
-<header class="w3-container w3-theme w3-padding" id="myHeader">
+<header class="w3-container w3-header w3-padding" id="myHeader">
   <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
   <div class="w3-center">
   <h4>Electronic Prescribing Risk and Safety Evaluation</h4>
@@ -32,52 +32,39 @@
 <div class="w3-bar w3-navbar-theme">
   <button class="w3-bar-item w3-button testbtn w3-padding-16 navbar-item-active" onclick="getContent('/')">Home</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('about.html')">About</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('using.html')">Using the Tool</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('reports.html')">Reports</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('using.html')">User Guide</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('faq.html')">FAQ</button>
 </div>
 <div id='content'>
 	<div class="w3-row-padding w3-center w3-margin-top">
 		<div onclick=getContent('about.html') class="w3-third clickable">
   			<div class="w3-card w3-container" style="min-height:460px">
   			<h3>About</h3><br>
-  			<i class="fa fa-question-circle w3-margin-bottom w3-blue-grey" style="font-size:120px"></i>
+  			<i class="fa fa-medkit w3-margin-bottom w3-blue-grey" style="font-size:120px"></i>
   			<p>What is ePRaSE?</p>
-  			<p>Summary and background</p>
   			</div>
 		</div>
 
 		<div onclick=getContent('using.html') class="w3-third clickable">
   			<div class="w3-card w3-container" style="min-height:460px">
- 			<h3>Using the Tool</h3><br>
-  			<i class="fa fa-medkit w3-margin-bottom w3-blue-grey" style="font-size:120px"></i>
-  			<p>How to Use the ePRaSE system</p>
+ 			<h3>User Guide</h3><br>
+  			<i class="fa fa-book  w3-margin-bottom w3-blue-grey" style="font-size:120px"></i>
   			<p>Step-by-step guide</p>
   			</div>
 		</div>
 
-		<div onclick=getContent('reports.html') class="w3-third clickable">
+		<div onclick=getContent('faq.html') class="w3-third clickable">
   			<div class="w3-card w3-container" style="min-height:460px">
-  			<h3>Reports</h3><br>
-  			<i class="fa fa-bar-chart w3-margin-bottom w3-blue-grey" style="font-size:120px"></i>
-  			<p>ePRaSE outputs</p>
-  			<p>Sample graphs</p>
+  			<h3>FAQ</h3><br>
+  			<i class="fa fa-question-circle w3-margin-bottom w3-blue-grey" style="font-size:120px"></i>
+  			<p>Frequently Asked Questions</p>
   			</div>
 		</div>
 	</div>
 </div>
 
-<footer class="w3-container w3-center w3-theme w3-padding-16">
-	<div class='w3-third w3-left'><img src='img/ncl_logo.png' alt='Newcastle University'></div>
-	<div class='w3-third'>
-  		<p>Footer Stuff</p>
-  	</div>
-  	<div class='w3-third w3-right'><img src='img/nhs_logo.png' alt='NHS England'></div>
-  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
-    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
+<div w3-include-html="footer.html"></div>
 
 </body>
 </html>
+<script>includeHTML();</script>
