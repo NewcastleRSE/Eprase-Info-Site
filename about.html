@@ -22,53 +22,55 @@
 </nav>
 
 <!-- Header -->
-<header class="w3-container w3-header w3-padding" id="myHeader">
-  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
-  <div class="w3-center">
-  <h4>Electronic Prescribing Risk and Safety Evaluation</h4>
-  <h1 class="w3-xxxlarge w3-animate-left">ePRaSE: About</h1>
-  </div>
-</header>
+<div w3-include-html="header.html"></div>
+
 <div class="w3-bar w3-navbar-theme">
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('/')">Home</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16 navbar-item-active" onclick="getContent('about.html')">About</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('using.html')">User Guide</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('faq.html')">FAQ</button>
 </div>
+<h1 class="eprase-h1 w3-animate-left">About ePRaSE</h1>
 <div id="content">
-<button onclick="myAccFunc('about_summary')" class="w3-padding-16 w3-accordion-theme w3-button w3-block w3-left-align accordion-header">Summary</button>
+<!-- <button onclick="myAccFunc('about_summary')" class="w3-padding-16 w3-accordion-theme w3-button w3-block w3-left-align accordion-header">Summary</button> -->
+ <h2 class="eprase-h2">Summary</h2>
 <div id='about_summary' class='accordion-text'>
+  <img class="eprase-image" src="img/e_molecule.jpg" alt="electronic medicine stock image" />
   <p>ePRaSE is a web-based tool intended to help NHS hospital sites assess and 
-    evaluate their ePrescribing systems to support optimisation and reduce 
+    evaluate their electronic prescribing (ePrescribing) systems to support optimisation and reduce 
     harm caused by adverse medication prescribing events, ultimately improving 
     patient safety.</p>
-  <p>The tool provides a set of 15 fictional 'patients', which users set up in 
-    their live or test prescribing environments, and then provides a set of 45 
-    prescribing test scenarios to challenge their system responses to risk. 
-    The performance of the prescribing system to the risk scenarios is provided 
-    in real time with a text-based report and accompanying visuals. The report 
-    is intended to guide and assist e-prescribing system users and new 
-    implementers in the optimisation of their systems.</p>
+  <p>The tool provides a set of 15 fictional 'patients', which users set up 
+    in their live or test ePrescribing environments, and then provides a set 
+    of 45 prescribing test scenarios to challenge their system responses to 
+    risk. There are also some additional direct configuration questions 
+    randomly spread through the scenarios to assess basic safety features in 
+    the build of the user's ePrescribing system. The performance of the 
+    ePrescribing system to both the risk scenarios and configuration questions 
+    is provided in real time with a text-based report and accompanying visuals. 
+    The report is intended to guide and assist ePrescribing system users and 
+    new implementers in the optimisation of their systems.</p>
   
   <p>The latest version, ePRaSE 2024, is suitable for all sites actively using 
-    electronic prescribing systems for adult patients, and is accessible to 
+    ePrescribing systems for adult patients, and is accessible to 
     registered users with nhs.uk or nhs.net email accounts (up to four users per 
     Trust). The report applies to the Trust as a whole.</p>
   
-  <p>The web based ePRaSE application is compatible with all modern browsers: Google Chrome, Mozilla Firefox, Opera, Safari, and Edge.</p>
+  <p>The web-based ePRaSE application is compatible with all modern browsers: Google Chrome, Mozilla Firefox, Opera, Safari, and Edge.</p>
   <div class="highlight"><p>If you would like to make ePRaSE part of 
     your optimisation work, you can register at 
     <a href='https://eprase.nhs.uk'>eprase.nhs.uk</a></p></div>
 </div>
 
-<button onclick="myAccFunc('about_background')" class="w3-padding-16 w3-accordion-theme w3-button w3-block w3-left-align accordion-header">Background</button>
-<div id='about_background' class='accordion-text w3-hide'>
-<p>ePrescribing (EP) is the utilisation of electronic systems to facilitate and 
+<!--<button onclick="myAccFunc('about_background')" class="w3-padding-16 w3-accordion-theme w3-button w3-block w3-left-align accordion-header">Background</button>-->
+<h2 class="eprase-h2">Background</h2>
+<div id='about_background' class='accordion-text'>
+<p>ePrescribing is the utilisation of electronic systems to facilitate and 
   enhance the safety and efficacy of prescribing medicines to patients, and to 
   provide a robust audit trail for the entire medicines use process. Implementation 
-  of EP with clinical decision support (CDS) has been extensively researched; 
+  of ePrescribing with clinical decision support (CDS) has been extensively researched; 
   many studies have shown reductions in medication error rates and preventable 
-  adverse effects. Following implementation of EP with CDS, medication errors 
+  adverse effects. Following implementation of ePrescribing with CDS, medication errors 
   tend to decrease over time as system configuration is optimised for local use 
   and users adapt to the system. Greater patient safety benefits are documented 
   with experienced users rather than new implementers. However, upgrades and 
@@ -79,14 +81,11 @@
   organisations.</p>
 
 <p>In the UK, there is currently no standard method of evaluating the effectiveness 
-  of EP systems in preventing medication errors or potential adverse drug events. 
+  of ePrescribing systems in preventing medication errors or potential adverse drug events. 
   NHS England, the UK Government organisation that oversees commissioning of NHS 
   services in England, has commissioned the development of an Electronic Prescribing Risk 
-  and Safety Evaluation tool (ePRaSE) to evaluate the capabilities of the EP 
-  systems currently implemented in UK hospitals. The ePRaSE assessment utilises 
-  test patient data alongside previously validated prescribing scenarios and 
-  offers a one-time, cross-sectional look at whether system decision support 
-  provides appropriate advice to a prescriber.</p>
+  and Safety Evaluation tool (ePRaSE) to evaluate the capabilities of the ePrescribing 
+  systems currently implemented in UK hospitals.</p>
 
 </div>
 </div>

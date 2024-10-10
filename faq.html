@@ -22,13 +22,7 @@
 </nav>
 
 <!-- Header -->
-<header class="w3-container w3-header w3-padding" id="myHeader">
-  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
-  <div class="w3-center">
-  <h4>Electronic Prescribing Risk and Safety Evaluation</h4>
-  <h1 class="w3-xxxlarge w3-animate-left">ePRaSE: Frequently Asked Questions</h1>
-  </div>
-</header>
+<div w3-include-html="header.html"></div>
 <div class="w3-bar w3-navbar-theme">
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('/')">Home</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('about.html')">About</button>
@@ -36,8 +30,95 @@
   <button class="w3-bar-item w3-button testbtn w3-padding-16 navbar-item-active" onclick="getContent('faq.html')">FAQ</button>
 </div>
 <div id="content">
+  <h1 class="eprase-h1 w3-animate-left">Frequently Asked Questions</h1>
+  
+  <div class="accordion-text">
+  <img class="eprase-image" src="img/advice.jpg" alt="stock image" />
+		
+  <p class='question'>Q: Can we have access to the raw data?</p>
 
-	
+  <p class='answer'>A: We are unable to share raw data or scenario details as we need to protect the integrity of the ePRaSE tool assessments.</p>
+  
+  <p class='question'>Q: Will you share any learnings from this version rollout with vendors?</p>
+  
+  <p class='answer'>A: System suppliers (vendors) do not currently have access to the tool. It is only for Trusts and NHS staff with NHS logins to access and assess their systems. The tool can only be accessed from within an NHS network (HSCN), there is no ‘public’ access from anywhere (unless you are connected to your NHS network remotely). However, it is our intention to share thematic findings at a later date through ePrescribing Masterclasses, publications, and other events. Vendors will have access to information through these routes. The programme team are also looking into how best to work with vendors on our findings in the future.</p>
+  
+  <p class='question'>Q: Will you share any learnings from this version rollout with users?</p>
+  
+  <p class='answer'>A: Thematic findings will be shared at the end of the latest cycle of ePRaSE, through the ePrescribing Masterclasses, publications, and other events. Users of the tool will be contacted with dates of the ePrescribing Masterclasses.</p>
+  
+  <p class='question'>Q: Do we complete the test if we do not use the EPMA for adult patients?</p>
+  
+  <p class='answer'>A: The test is only for organisations using EPMA for adult patients. We are planning to develop paediatric, chemotherapy and primary care versions in the future, subject to business planning cycles.</p>
+  
+  <p class='question'>Q: Is the tool designed for acute trust scenarios only?</p>
+  
+  <p class='answer'>A: This version is designed for use by acute specialist, general district, and mental health trusts. We are planning to develop paediatric, chemotherapy and primary care versions in the future, subject to business planning cycles.
+   
+  
+  </p>
+  
+  <p class='question'>Q: Do we complete the test if we have recently implemented the EPMA system?</p>
+  
+  <p class='answer'>A: Yes you can - when completing you will enhance your learning, and it may provide a helpful baseline at this early stage of your electronic prescribing journey.</p>
+  
+  <p class='question'>Q: Why am I unable to access the tool using my nhs.uk domain?</p>
+  
+  <p class='answer'>A: The tool can only be accessed from within an NHS network (HSCN), to users with nhs.net or nhs.uk email accounts. There is no ‘public’ access from anywhere (unless you are connected to your NHS network remotely). This means that unless you have remote access set up from a device you cannot use at home, access will be limited to inside your work locations. If you are at a work location and still unable to get access, you will need to log a ticket with your IT support team and get them to check if there is a firewall blocking the domain.</p>
+  
+  <p class='question'>Q: Can we amend a response that has been incorrectly added?</p>
+  
+  <p class='answer'>A: Once you have submitted a response for a test scenario you cannot go back and amend the response. Please contact us at nuth.eprase@nhs.net if you require further support.</p>
+  
+  <p class='question'>Q: What can we do if we missed important information in our patient build and the tool seems to have lost the information we added?</p>
+  
+  <p class='answer'>A: If you have missed important information in your patient build you can go back and view the patient build again. However please contact us at nuth.eprase@nhs.net if you need further assistance or your tests reset.</p>
+  
+  <p class='question'>Q: We use more than one electronic prescribing system in our organisation. Can you amend the tool to include these changes?</p>
+  
+  <p class='answer'>A: Only one system can be tested at this time. We recommend you select your most used system. This is only the third iteration of the ePRaSE tool, the ability to test multiple systems is being considered for future versions.</p>
+  
+  <p class='question'>Q: Who can complete the assessment?</p>
+  
+  <p class='answer'>A: The assessment can be completed by an individual or teams who have the access and capability to be able to use their electronic prescribing system to admit /edit patients and prescribe medicines.</p>
+  
+  <p class='question'>Q: Do we have to admit in Patient Administration System (PAS)? Or can we admit manually in the EPMA system directly as this is easier for us to manage locally?</p>
+  
+  <p class='answer'>A: We recommend following your normal operating procedure. If patient information is drawn from PAS into the electronic prescribing system normally, we would recommend that you do that. Some patients require additional clinical information to be added for the scenarios/test to work correctly. We estimate it takes roughly 1 - 1.5 hours to set up the fictional patient and similar time to run the test part and record observations. You can log in and out of the patient build sections without losing your place so that it can be completed over several different sessions if that is easier.</p>
+  
+  <p class='question'>Q: Can anyone outside the ePRaSE project team view the identifiable data via this tool?</p>
+  
+  <p class='answer'>A: Individuals outside of the ePRaSE Project Team cannot view identifiable data via this tool.</p>
+  
+  <p class='question'>Q: Why are my results not as expected?</p>
+  
+  <p class='answer'>A: We understand that the scoring system will not be perfect at the outset. We will be analysing factors from all the collected data as part of NHS England's drive for patient safety.</p>
+  
+  <p class='question'>Q: I have completed the tool assessment however I do not understand the report I have been provided, is there support to help with the results?</p>
+  
+  <p class='answer'>A: If you have any queries with your report, please refer to the user guide or contact nuth.eprase@nhs.net for support.</p>
+  
+  <p class='question'>Q: I have used ePRaSE before, do I have to sign up again?</p>
+  
+  <p class='answer'>A: The ePRaSE tool has been completely refreshed in 2024 and all users will have to register even if they have signed up to the previous version.</p>
+  
+  <p class='question'>Q: I have used ePRaSE before, can I access the reports from last time?</p>
+  
+  <p class='answer'>A: The ePRaSE tool has been completely refreshed and reports generated by users in the last version cannot be recalled. The new tool allows reports to be printed off and exported for future reference.</p>
+  
+  <p class='question'>Q: I need technical support, when can I get in touch?</p>
+  
+  <p class='answer'>A: Please contact us by email at nuth.eprase@nhs.net. Office times are 9-5pm. Response times are from 48 hours to 72 hours.</p>
+  
+  <p class='question'>Q: Is it possible to access the tool and carry out a test run before completing the proper assessment?</p>
+  
+  <p class='answer'>A: The ePRaSE assessment is an annual test that can only be completed by an individual Trust once. It is not possible to go in and have a look and do multiple runs. Please refer to the explainer videos and user guide to prepare ahead of the self-assessment, both available at www.eprase.info.</p>
+  
+  <p class='question'>Q: How many times can we test our systems?</p>
+  
+  <p class='answer'>A: The ePRaSE Tool assessment is planned as an annual test.</p>
+  
+	</div>
 </div>
 <div w3-include-html="footer.html"></div>
 

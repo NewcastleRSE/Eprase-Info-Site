@@ -22,41 +22,37 @@
 </nav>
 
 <!-- Header -->
-<header class="w3-container w3-header w3-padding" id="myHeader">
-  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
-  <div class="w3-center">
-  <h4>Electronic Prescribing Risk and Safety Evaluation</h4>
-  <h1 class="w3-xxxlarge w3-animate-left">ePRaSE</h1>
-  </div>
-</header>
+<div w3-include-html="header.html"></div>
+
 <div class="w3-bar w3-navbar-theme">
   <button class="w3-bar-item w3-button testbtn w3-padding-16 navbar-item-active" onclick="getContent('/')">Home</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('about.html')">About</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('using.html')">User Guide</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('faq.html')">FAQ</button>
 </div>
+<!-- Main content -->
 <div id='content'>
 	<div class="w3-row-padding w3-center w3-margin-top">
 		<div onclick=getContent('about.html') class="w3-third clickable">
-  			<div class="w3-card w3-container" style="min-height:460px">
+  			<div class="w3-card w3-container" style="min-height:350px">
   			<h3>About</h3><br>
-  			<i class="fa fa-medkit w3-margin-bottom w3-blue-grey" style="font-size:120px"></i>
+  			<i class="fa fa-medkit w3-margin-bottom eprase-icons" style="font-size:120px"></i>
   			<p>What is ePRaSE?</p>
   			</div>
 		</div>
 
 		<div onclick=getContent('using.html') class="w3-third clickable">
-  			<div class="w3-card w3-container" style="min-height:460px">
+  			<div class="w3-card w3-container" style="min-height:350px">
  			<h3>User Guide</h3><br>
-  			<i class="fa fa-book  w3-margin-bottom w3-blue-grey" style="font-size:120px"></i>
+  			<i class="fa fa-book  w3-margin-bottom eprase-icons" style="font-size:120px"></i>
   			<p>Step-by-step guide</p>
   			</div>
 		</div>
 
 		<div onclick=getContent('faq.html') class="w3-third clickable">
-  			<div class="w3-card w3-container" style="min-height:460px">
+  			<div class="w3-card w3-container" style="min-height:350px">
   			<h3>FAQ</h3><br>
-  			<i class="fa fa-question-circle w3-margin-bottom w3-blue-grey" style="font-size:120px"></i>
+  			<i class="fa fa-question-circle w3-margin-bottom eprase-icons" style="font-size:120px"></i>
   			<p>Frequently Asked Questions</p>
   			</div>
 		</div>

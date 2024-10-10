@@ -22,13 +22,8 @@
 </nav>
 
 <!-- Header -->
-<header class="w3-container w3-header w3-padding" id="myHeader">
-  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
-  <div class="w3-center">
-  <h4>Electronic Prescribing Risk and Safety Evaluation</h4>
-  <h1 class="w3-xxxlarge w3-animate-left">ePRaSE: User Guide</h1>
-  </div>
-</header>
+<div w3-include-html="header.html"></div>
+
 <div class="w3-bar w3-navbar-theme">
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('/')">Home</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('about.html')">About</button>
@@ -36,27 +31,15 @@
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="getContent('faq.html')">FAQ</button>
 </div>
 <div id="content">
-
-	<button onclick="myAccFunc('using_login')" class="w3-padding-16 w3-accordion-theme w3-button w3-block w3-left-align accordion-header">Register/Login</button>
-	<div id='using_login' class='accordion-text'>
-		<p>Registration and Login information...</p>
+<h1 class="eprase-h1 w3-animate-left">User Guide</h1>
+	<div class="accordion-text">
+		<img class="eprase-image" src="img/notes.jpg" alt="stock image" />
+		<p>Step-by-step instructions for using the ePRaSE tool can be found
+			in <a href="assets/userguide2024.pdf" title="User Guide PDF">this PDF file</a>. 
+			Alternatively, the video below also presents a walk-through of the 
+			ePRaSE system.
+		</p>
 	</div>
-
-	<button onclick="myAccFunc('using_begin')" class="w3-padding-16 w3-accordion-theme w3-button w3-block w3-left-align accordion-header">Begin Assessment</button>
-	<div id='using_begin' class='accordion-text w3-hide'>
-		<p>How to enter system information...</p>
-	</div>
-
-	<button onclick="myAccFunc('using_patients')" class="w3-padding-16 w3-accordion-theme w3-button w3-block w3-left-align accordion-header">Enter Patient Information</button>
-	<div id='using_patients' class='accordion-text w3-hide'>
-		<p>How to enter patient information...</p>
-	</div>
-	
-	<button onclick="myAccFunc('using_scenarios')" class="w3-padding-16 w3-accordion-theme w3-button w3-block w3-left-align accordion-header">Complete Assessment Scenarios</button>
-	<div id='using_scenarios' class='accordion-text w3-hide'>
-		<p>How to complete assessment scenarios...</p>
-	</div>
-	
 </div>
 <div w3-include-html="footer.html"></div>
 
