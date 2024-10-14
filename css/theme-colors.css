@@ -15,9 +15,13 @@
 .w3-theme-action {color:#fff !important; background-color:#1e2a71 !important}
 
 .w3-theme {color:#fff !important; background-color:#1e2a71 !important}
-.w3-footer, .w3-navbar-theme {
+.w3-navbar-theme {
     color:#fff !important; 
     background-image:linear-gradient(#3e53cc,#151E51) !important;
+}
+.w3-footer {
+    color:#fff !important; 
+    background-image:linear-gradient(#bfc6ee, #3e53cc) !important;
 }
 .w3-header {
     background-image: linear-gradient(#151E51,#3e53cc);
