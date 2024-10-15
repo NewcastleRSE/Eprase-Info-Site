@@ -262,10 +262,20 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .eprase-contact a:hover {
     color: #5e70d4;
 }
+.eprase-link { color: #273791;}
+.eprase-link:hover {color: #eff1be; background-color: #273791;}
 .burger {margin: 10px;}
 .eprase-h1 {color: #1e2a71; margin-left: 5%;}
 .eprase-h2 {color: #3e53cc; font-style: italic; margin-left: 15%}
 .eprase-icons {color:#fff!important;background-color:#7e8cdd!important;}
+.eprase-icons:hover {background-color: #3e53cc!important;}
+.eprase-video {
+    clear: both; 
+    border-top: 1px solid #7e8cdd; 
+    padding: 15px;
+}
+@media (max-width:800px){.eprase-video iframe {width: 426px; height:240px;}}
+@media (min-width:801px){.eprase-video iframe {width: 854px; height: 480px;}}
 .highlight {
     width: 80%;
     margin: auto;
