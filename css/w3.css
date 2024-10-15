@@ -244,27 +244,38 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .eprase-header {
     background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: #273791;
-    min-height: 300px;
-    max-height: 300px;
+    background-size: cover;
+    /*background-image: linear-gradient(to right, #030638,#273791 30%);*/
+    /*background-color: #273791;*/
+    height: 300px;
     margin: 0;
     padding: 0;
+    white-space: nowrap;
 }
 .eprase-banner-right {
     float: right;
     margin: 0;
+    z-index: 0;
+    white-space: nowrap;
 }
 .eprase-banner-left {
     float: left;
     margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    white-space: nowrap;
+}
+@media (max-width:800px) {
+    .eprase-banner-left {width: 300px;}
 }
 .eprase-contact a:hover {
     color: #5e70d4;
 }
 .eprase-link { color: #273791;}
 .eprase-link:hover {color: #eff1be; background-color: #273791;}
-.burger {margin: 10px;}
+.burger {position: fixed; top: 10px; left: 10px; z-index: 99;}
 .eprase-h1 {color: #1e2a71; margin-left: 5%;}
 .eprase-h2 {color: #3e53cc; font-style: italic; margin-left: 15%}
 .eprase-icons {color:#fff!important;background-color:#7e8cdd!important;}
