@@ -11,6 +11,11 @@ window.addEventListener("resize", () => {
 });
 
 window.addEventListener("load",sortBanner);
+let portrait = window.matchMedia("(orientation: portrait)");
+
+portrait.addEventListener("change", sortBanner);
+
+
 function sortBanner() {
   let w = window.innerWidth;
   let h;
