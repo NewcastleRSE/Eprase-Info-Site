@@ -241,16 +241,30 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
 /* custom styles */
-.eprase-header {
+
+@media(max-width:600px) {
+    #eprase-header {height: 126px; background-size: 100%, 126px;}
+}
+@media(min-width: 601px) {
+    #eprase-header {height: 214px; background-size: 100%, 214px;}
+}
+@media(min-width: 801px) {
+    #eprase-header {height: 240px; background-size: 100%, 240px;}
+}
+@media(min-width: 1001px) {
+    #eprase-header {height: 275px; background-size: 100%, 275px;}
+}
+@media(min-width:1201px) {
+    #eprase-header {height: 300px; background-size: 100%, 300px;}
+}
+
+#eprase-header {
     background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    /*background-image: linear-gradient(to right, #030638,#273791 30%);*/
-    /*background-color: #273791;*/
-    height: 300px;
+    /*background-size: cover;*/
     margin: 0;
     padding: 0;
-    white-space: nowrap;
+    transition: width .5s, height .5s;
 }
 .eprase-banner-right {
     float: right;
@@ -267,9 +281,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     z-index: 2;
     white-space: nowrap;
 }
-@media (max-width:800px) {
-    .eprase-banner-left {width: 300px;}
-}
+
 .eprase-contact a:hover {
     color: #5e70d4;
 }

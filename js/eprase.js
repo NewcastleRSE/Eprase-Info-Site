@@ -3,7 +3,31 @@
 function getContent(file) {
 	window.location.assign(file);
 }
+var timeId = null;
 
+window.addEventListener("resize", () => {
+  clearTimeout(timeId);
+  timeId = setTimeout(sortBanner, 200);
+});
+
+window.addEventListener("load",sortBanner);
+function sortBanner() {
+  let w = window.innerWidth;
+  let h;
+  if(w < 601) {
+    h = 126;
+  } else if (w < 801) {
+    h = 214;
+  } else if (w < 1001) {
+    h = 240;
+  } else if (w < 1201) {
+    h = 275;
+  } else {
+    h = 300;
+  }
+  let size = w+"px "+h+"px";
+  document.getElementById("eprase-header").style.backgroundSize = size;
+}
 
 // Side navigation
 function w3_open() {
